@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jersey For All</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background:#f4f4f4;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#000;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    z-index:1000;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    color:#e50914;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    margin-top:70px;
+    background:url("https://images.pexels.com/photos/35162974/pexels-photo-35162974.jpeg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero h1{
+    color:#fff;
+    font-size:3rem;
+    background:rgba(0,0,0,0.6);
+    padding:20px 40px;
+    border-radius:10px;
+}
+
+/* SECTION */
+section{
+    padding:70px 60px;
+}
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.3rem;
+}
+
+/* PRODUCTS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+.card{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.15);
+    min-height:400px;
+}
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:contain;
+    background:#fff;
+}
+.card .info{
+    padding:14px;
+}
+.card h3{
+    font-size:1.05rem;
+}
+.price{
+    font-weight:bold;
+    margin:8px 0 12px;
+}
+.addBtn{
+    display:block;
+    text-align:center;
+    padding:10px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+}
+.addBtn:hover{
+    background:#e50914;
+}
+
+/* THANK YOU */
+.thankyou{
+    background:#fff;
+    text-align:center;
+}
+.thankyou h2{
+    color:#111;
+}
+.thankyou p{
+    font-size:1.1rem;
+    margin-top:10px;
+}
+
+/* CONTACT */
+.contact{
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>⚽ Jersey For All</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Jerseys For Every Fan</h1>
+</div>
+
+<section id="teams">
+<h2>Popular Teams</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://www.copycatz.in/wp-content/uploads/2023/07/FC-Barcelona-Home-23-24-new-kit.jpeg">
+<div class="info">
+<h3>FC Barcelona Jersey</h3>
+<p class="price">₹999</p>
+<a href="#thankyou" class="addBtn">Buy Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.meesho.com/images/products/389469665/qzr1z_512.webp">
+<div class="info">
+<h3>Real Madrid Jersey</h3>
+<p class="price">₹1099</p>
+<a href="#thankyou" class="addBtn">Buy Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://emporiosports.in/wp-content/uploads/2025/06/1cca565d.jpg">
+<div class="info">
+<h3>Manchester United Jersey</h3>
+<p class="price">₹999</p>
+<a href="#thankyou" class="addBtn">Buy Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://rukminim2.flixcart.com/image/480/640/xif0q/t-shirt/h/c/8/m-1000-bay-mun-24-m-bayern-munich-jersey-original-imaheaxvgzubxaeh.jpeg">
+<div class="info">
+<h3>Bayern Munich Jersey</h3>
+<p class="price">₹1049</p>
+<a href="#thankyou" class="addBtn">Buy Now</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="thankyou" class="thankyou">
+<h2>Thank You for Buying ❤️</h2>
+<p>Your order has been placed successfully.</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>Email: support@jerseyforall.com</p>
+</section>
+
+<footer>
+© 2026 Jersey For All
+</footer>
+
+</body>
+</html>
